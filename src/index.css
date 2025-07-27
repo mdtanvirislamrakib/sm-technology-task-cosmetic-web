@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-.banner-bg-color {
-  background: rgba(255, 255, 255, 0.2);
-}
+/* .banner-bg-color {
+  background: rgba(255, 255, 255, 0.01);
+} */
 .banner-image-bg {
   background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(255, 199, 207) 34.615%,rgba(255, 255, 255, 0) 100%);
 }

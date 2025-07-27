@@ -45,10 +45,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className='relative flex items-center overflow-hidden py-10 md:py-16 lg:py-0 lg:pt-10'
-      style={{
-        background: 'linear-gradient(to right, #ffffff 0%, #FFF8F8 100%)'
-      }}
+      className='relative flex items-center overflow-hidden py-10 md:py-16 lg:py-0 lg:pt-10 banner-bg-color bg-gray-200/5'
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -109,7 +106,7 @@ const Hero = () => {
 
           {/* Image section */}
           <motion.div
-            className='relative w-full max-w-[400px] md:max-w-[480px] lg:max-w-[450px] xl:max-w-[600px] h-auto flex-shrink-0'
+            className='relative w-full max-w-[400px] md:max-w-[480px] lg:max-w-[450px] xl:max-w-[600px] h-auto flex-shrink-0 banner-image-bg bg-contain bg-no-repeat bg-center'
             variants={imageVariants}
           >
             <img
