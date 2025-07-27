@@ -1,68 +1,113 @@
 import React, { useState } from 'react';
-import { HiOutlineSearch, HiOutlineUser, HiOutlineShoppingCart, HiMenu, HiX } from 'react-icons/hi'; // React Icons 
-import logo from "../../assets/images/logo.png"
+import { motion, AnimatePresence } from 'framer-motion'; // Framer Motion for animation
+import { HiOutlineSearch, HiOutlineUser, HiOutlineShoppingCart, HiMenu, HiX, HiChevronDown } from 'react-icons/hi'; // React Icons for use icons
+import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // mobile menu toogle
+  const [isOpen, setIsOpen] = useState(false); // menu bar state
+  const [isBlogDropdownOpen, setIsBlogDropdownOpen] = useState(false); //  dropdown state
+
+  // Framer Motion mobile verients
+  const menuVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.3 } }
+  };
+
+  // Framer Motion varients for blog dropdown
+  const dropdownVariants = {
+    hidden: { opacity: 0, y: -10, scaleY: 0.95 },
+    visible: { opacity: 1, y: 0, scaleY: 1, transition: { duration: 0.2 } },
+    exit: { opacity: 0, y: -10, scaleY: 0.95, transition: { duration: 0.2 } }
+  };
 
   return (
     <nav className="bg-white shadow-sm py-4">
       <div className="container mx-auto px-4 flex items-center justify-between">
-        {/* লোগো সেকশন */}
+
+        {/* logo section */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Velvet Glow Logo" className="h-8 w-8" /> 
+          <img src={logo} alt="Velvet Glow Logo" className="h-8 w-8 object-contain" />
           <span className="text-pink-600 text-2xl font-semibold">Velvet Glow</span>
         </div>
 
-        {/* desktop navbar*/}
+        {/* desktop navbar */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-gray-700 hover:text-pink-600 transition duration-300">Home</a>
-          <a href="#" className="text-gray-700 hover:text-pink-600 transition duration-300">Shop</a>
-          <a href="#" className="text-gray-700 hover:text-pink-600 transition duration-300">Product</a>
-          <div className="relative group">
-            <button className="text-gray-700 hover:text-pink-600 transition duration-300 flex items-center">
+          <a href="#" className="text-pink-600 transition duration-300 font-medium text-lg">Home</a>
+          <a href="#" className="text-gray-700 hover:text-pink-600 transition duration-300 font-medium text-lg">Shop</a>
+          <a href="#" className="text-gray-700 hover:text-pink-600 transition duration-300 font-medium text-lg">Product</a>
+          
+          {/* blog nav and dropdown */}
+          <div 
+            className="relative group"
+            onMouseEnter={() => setIsBlogDropdownOpen(true)}
+            onMouseLeave={() => setIsBlogDropdownOpen(false)}
+          >
+            <button className="text-gray-700 hover:text-pink-600 transition duration-300 flex items-center focus:outline-none font-medium text-lg">
               Blog
-              <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              <HiChevronDown className="ml-1 h-4 w-4 transition-transform duration-200" style={{ transform: isBlogDropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
             </button>
-            {/* ড্রপডাউন মেনু (ঐচ্ছিক, আপনার ছবিতে এটি খোলা নেই কিন্তু ব্লগের জন্য সাধারণত থাকে) */}
-            <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-40 z-10">
-              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Blog Item 1</a>
-              <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Blog Item 2</a>
-            </div>
+            <AnimatePresence>
+              {isBlogDropdownOpen && (
+                <motion.div 
+                  className="absolute bg-white shadow-lg rounded-md mt-2 w-40 z-10 overflow-hidden"
+                  variants={dropdownVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                >
+                  <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition duration-150 text-lg">Blog 1</a>
+                  <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition duration-150 text-lg">Blog 2</a>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-          <a href="#" className="text-gray-700 hover:text-pink-600 transition duration-300">Contact us</a>
+          <a href="#" className="text-gray-700 hover:text-pink-600 transition duration-300 font-medium text-lg">Contact us</a>
         </div>
 
-        {/* আইকন সেকশন (ডেস্কটপ) */}
+        {/* icons */}
         <div className="hidden md:flex items-center space-x-6">
-          <HiOutlineSearch className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer" />
-          <HiOutlineShoppingCart className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer" />
-          <HiOutlineUser className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer" />
+          <HiOutlineSearch className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer transition duration-300" />
+          <HiOutlineShoppingCart className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer transition duration-300" />
+          <HiOutlineUser className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer transition duration-300" />
         </div>
 
-        {/* মোবাইল মেনু বাটন */}
+        {/* menu button for mobile */}
         <div className="md:hidden flex items-center">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 hover:text-pink-600 focus:outline-none">
+          <button 
+            onClick={() => setIsOpen(!isOpen)} 
+            className="text-gray-700 hover:text-pink-600 focus:outline-none transition duration-300"
+          >
             {isOpen ? <HiX className="h-7 w-7" /> : <HiMenu className="h-7 w-7" />}
           </button>
         </div>
       </div>
 
-      {/* মোবাইল মেনু (টগল করা যাবে) */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-white border-t border-gray-100 py-2`}>
-        <div className="flex flex-col items-center space-y-4 px-4">
-          <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2">Home</a>
-          <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2">Shop</a>
-          <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2">Product</a>
-          <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2">Blog</a>
-          <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2">Contact us</a>
-          <div className="flex items-center space-x-6 mt-4 pt-2 border-t border-gray-100 w-full justify-center">
-            <HiOutlineSearch className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer" />
-            <HiOutlineShoppingCart className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer" />
-            <HiOutlineUser className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer" />
-          </div>
-        </div>
-      </div>
+      {/* toggle menu when the device is small/mobile */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            className="md:hidden bg-white border-t border-gray-100 py-2"
+            variants={menuVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <div className="flex flex-col items-center space-y-4 px-4">
+              <a href="#" className="text-pink-600 w-full text-center py-2 font-medium transition duration-150">Home</a>
+              <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2 font-medium transition duration-150">Shop</a>
+              <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2 font-medium transition duration-150">Product</a>
+              <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2 font-medium transition duration-150">Blog</a>
+              <a href="#" className="text-gray-700 hover:text-pink-600 w-full text-center py-2 font-medium transition duration-150">Contact us</a>
+              <div className="flex items-center space-x-6 mt-4 pt-2 border-t border-gray-100 w-full justify-center">
+                <HiOutlineSearch className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer transition duration-300" />
+                <HiOutlineShoppingCart className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer transition duration-300" />
+                <HiOutlineUser className="text-gray-700 hover:text-pink-600 text-2xl cursor-pointer transition duration-300" />
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
