@@ -1,6 +1,6 @@
 # 🚀 SM Technology – Frontend Developer Task
 
-![Project Preview](./preview.PNG)
+![Project Preview](/preview.PNG)
 
 This repository contains the completed technical assessment for the **Frontend Developer** position at **SM Technology**. The task involved replicating a Figma design into a fully responsive landing page using modern frontend technologies.
 
@@ -53,15 +53,15 @@ npm run build
 
 ```
 
-🔗 Submission Links
-🔴 Live Demo: Live Website
-🗂️ GitHub Repository: GitHub Repo
+🔗 Submission Links  
+🔴 Live Demo: Live Website  
+🗂️ GitHub Repository: GitHub Repo  
 
-👨‍💻 About the Developer
-MD. Tanvir Islam Rakib
-Frontend Developer | Clean Code Enthusiast | UI/UX Focused
-🎓 BGIFT Institute of Science & Technology
-📧 Email: mdtanvirislamrakib7@gmail.com
-🌐 Portfolio: [Portfolio](https://md-tanvir-islam-rakib.netlify.app/)
-🔗 LinkedIn: [Linkedin](https://www.linkedin.com/in/tanvir-islam-rakib/)
-🐙 GitHub: [GitHub Profile](https://github.com/mdtanvirislamrakib)
+👨‍💻 About the Developer  
+MD. Tanvir Islam Rakib  
+Frontend Developer | Clean Code Enthusiast | UI/UX Focused  
+🎓 BGIFT Institute of Science & Technology  
+📧 Email: mdtanvirislamrakib7@gmail.com  
+🌐 Portfolio: [Portfolio](https://md-tanvir-islam-rakib.netlify.app/)  
+🔗 LinkedIn: [Linkedin](https://www.linkedin.com/in/tanvir-islam-rakib/)  
+🐙 GitHub: [GitHub Profile](https://github.com/mdtanvirislamrakib)  
