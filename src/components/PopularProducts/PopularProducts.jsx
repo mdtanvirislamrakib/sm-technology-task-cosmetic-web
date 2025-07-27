@@ -46,7 +46,7 @@ const PopularProducts = () => {
             initial="initial"
             animate="animate"
             whileHover="hover"
-            className="relative border border-gray-200 rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer"
+            className="relative rounded-lg overflow-hidden bg-white cursor-pointer"
           >
             {/* Sale badge displayed conditionally */}
             {product.sale && (

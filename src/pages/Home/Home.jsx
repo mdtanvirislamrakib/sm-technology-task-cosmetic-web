@@ -4,6 +4,8 @@ import BrowseCollection from '../../components/BrowseCollection/BrowseCollection
 import ShopNow from '../../components/ShopNow/ShopNow';
 import PopularProducts from '../../components/PopularProducts/PopularProducts';
 import NewsAndBlog from '../../components/NewsAndBlog/NewsAndBlog';
+import Footer from '../../components/Footer/Footer';
+import CustomerTestimonial from '../../components/CustomerTestimonial/CustomerTestimonial';
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
       <BrowseCollection></BrowseCollection>
       <ShopNow></ShopNow>
       <PopularProducts></PopularProducts>
+      <CustomerTestimonial></CustomerTestimonial>
       <NewsAndBlog></NewsAndBlog>
+      <Footer></Footer>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const NewsAndBlog = () => {
             <p className="text-gray-600 text-sm mb-4">
               Discover the secrets to a glowing complexion with our expert guide to daily skincare. Learn about the best products and techniques to cleanse, hydrate, and protect your skin for lasting radiance and health.
             </p>
-            <button className=" hover:bg-pink-700 text-lg text-white font-semibold bg-[#CE4E61] py-2 rounded-md transition duration-300 w-44 cursor-pointer">
+            <button className=" hover:bg-pink-700 text-lg text-white font-semibold bg-[#CE4E61] py-2 rounded-md transition duration-300 w-52 cursor-pointer">
               Read more
             </button>
           </div>
@@ -36,7 +36,7 @@ const NewsAndBlog = () => {
             <p className="text-gray-600 text-sm mb-4">
               Dive into the world of cosmetics and learn how to apply makeup like a pro. From foundation to finishes, our tips will help you highlight your best features and express your unique style with confidence.
             </p>
-            <button className=" hover:bg-[#CE4E61] text-black text-lg hover:text-white font-semibold border-[#CE4E61] border py-2 rounded-md transition duration-300 w-44 cursor-pointer">
+            <button className=" hover:bg-[#CE4E61] text-black text-lg hover:text-white font-semibold border-[#CE4E61] border py-2 rounded-md transition duration-300 w-52 cursor-pointer">
               Read more
             </button>
           </div>
@@ -56,7 +56,7 @@ const NewsAndBlog = () => {
             <p className="text-gray-600 text-sm mb-4">
               Explore the latest trends and treatments for healthy, lustrous hair. Whether you're dealing with damage, dryness, or dullness, our comprehensive guide offers solutions to revitalize your locks.
             </p>
-            <button className=" hover:bg-[#CE4E61]  text-black text-lg hover:text-white font-semibold border-[#CE4E61]  border py-2 rounded-md transition duration-300 w-44 cursor-pointer">
+            <button className=" hover:bg-[#CE4E61]  text-black text-lg hover:text-white font-semibold border-[#CE4E61]  border py-2 rounded-md transition duration-300 w-52 cursor-pointer">
               Read more
             </button>
           </div>
