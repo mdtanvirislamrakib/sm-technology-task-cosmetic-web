@@ -5,6 +5,13 @@ This repository contains the completed technical assessment for the **Frontend D
 
 ---
 
+---
+🔗 Submission Links    
+🔴 Live Demo: [Live Website ](https://sm-technology-task.netlify.app/)     
+🗂️ GitHub Repository: [GitHub Repo](https://github.com/mdtanvirislamrakib/sm-technology-task-cosmetic-web)    
+
+---
+
 ## 🛠️ Technologies Used
 
 - ⚛️ **React.js** – Component-based JavaScript library
@@ -52,9 +59,6 @@ npm run build
 
 ```
 
-🔗 Submission Links  
-🔴 Live Demo: [Live Website ](https://sm-technology-task.netlify.app/) 
-🗂️ GitHub Repository: [GitHub Repo](https://github.com/mdtanvirislamrakib/sm-technology-task-cosmetic-web)  
 
 👨‍💻 About the Developer  
 MD. Tanvir Islam Rakib  
