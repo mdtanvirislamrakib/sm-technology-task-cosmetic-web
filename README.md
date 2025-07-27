@@ -53,7 +53,7 @@ npm run build
 ```
 
 🔗 Submission Links  
-🔴 Live Demo: Live Website  
+🔴 Live Demo: [Live Website ](https://sm-technology-task.netlify.app/) 
 🗂️ GitHub Repository: [GitHub Repo](https://github.com/mdtanvirislamrakib/sm-technology-task-cosmetic-web)  
 
 👨‍💻 About the Developer  
