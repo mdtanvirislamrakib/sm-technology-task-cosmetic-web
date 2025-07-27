@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
+// Importing collection images
 import image1 from "../../assets/images/browse collection images/image1.png";
 import image2 from "../../assets/images/browse collection images/image2.png";
 import image3 from "../../assets/images/browse collection images/image3.png";
 import image4 from "../../assets/images/browse collection images/image4.png";
 
+// Collection data array
 const collectionData = [
   { id: 1, title: 'Oil Cleansers', image: image1, items: '5 Items' },
   { id: 2, title: 'Hand Cream', image: image2, items: '5 Items' },
@@ -12,13 +15,13 @@ const collectionData = [
   { id: 4, title: 'Face Mask', image: image4, items: '5 Items' },
 ];
 
-// Framer Motion Variants
+// Framer Motion animation variants for container and items
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.2, // Animate children with delay
     },
   },
 };
@@ -29,6 +32,7 @@ const itemVariants = {
   hover: { scale: 1.1, transition: { type: 'spring', stiffness: 150, damping: 10 } },
 };
 
+// Main component
 const BrowseCollection = () => {
   return (
     <motion.div
@@ -38,8 +42,11 @@ const BrowseCollection = () => {
       animate="visible"
     >
       <div className="container mx-auto text-center roboto-font">
+        {/* Section Heading */}
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Browse by Collection</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 px-4 md:px-0  mx-auto xl:max-w-4xl 2xl:max-w-5xl">
+
+        {/* Collection Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 px-4 md:px-0 mx-auto xl:max-w-4xl 2xl:max-w-5xl">
           {collectionData.map(item => (
             <motion.div
               key={item.id}
@@ -47,13 +54,16 @@ const BrowseCollection = () => {
               variants={itemVariants}
               whileHover="hover"
             >
-              <div className="relative overflow-hidden ">
+              {/* Image Box */}
+              <div className="relative overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="object-cover w-full h-full"
                 />
               </div>
+
+              {/* Title & Item Count */}
               <h3 className="mt-4 text-lg font-semibold text-gray-700">{item.title}</h3>
               <p className="text-sm text-[#AE5928] font-semibold">{item.items}</p>
             </motion.div>

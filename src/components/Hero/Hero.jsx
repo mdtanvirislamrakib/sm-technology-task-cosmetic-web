@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className='relative flex items-center overflow-hidden py-10 md:py-16 lg:py-0 lg:pt-20 banner-bg-color bg-gray-200/5'
+      className='relative flex items-center overflow-hidden pt-10 md:pt-16 lg:pt-20 banner-bg-color bg-gray-200/5'
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -102,7 +102,7 @@ const Hero = () => {
         </div>
 
         {/* Right Side: Image and Quote*/}
-        <div className='lg:w-1/2 relative flex flex-col items-center lg:flex-row lg:items-start lg:justify-end py-10 lg:py-0'>
+        <div className='lg:w-1/2 relative flex flex-col items-center lg:flex-row lg:items-start lg:justify-end pt-10 lg:py-0'>
 
           {/* Image section */}
           <motion.div
@@ -118,7 +118,7 @@ const Hero = () => {
 
           {/* Quote Box*/}
           <motion.div
-            className='absolute p-5 md:p-6 text-sm md:text-base lg:text-gray-900 bg-white lg:bg-transparent rounded-4xl lg:shadow-none shadow-sm max-w-[200px] md:max-w-[250px] lg:max-w-[250px] lg:mr-5 z-20 lg:-right-[80px] xl:-right-[100px] lg:top-0 lg:bottom-auto bottom-10 -right-10 md:-right-20 roboto-font'
+            className='absolute p-5 md:p-6 text-sm md:text-base lg:text-gray-900 bg-white lg:bg-transparent rounded-4xl lg:shadow-none shadow-sm max-w-[200px] md:max-w-[250px] lg:max-w-[250px] lg:mr-5 z-20 lg:-right-[80px] xl:-right-[100px] lg:top-0 lg:bottom-auto bottom-0 -right-10 md:-right-20 roboto-font'
 
             variants={quoteBoxVariants}
             animate={["visible", "float"]}

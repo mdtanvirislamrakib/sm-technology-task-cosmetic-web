@@ -1,6 +1,5 @@
 # 🚀 SM Technology – Frontend Developer Task
 
-![Project Preview](/preview.PNG)
 
 This repository contains the completed technical assessment for the **Frontend Developer** position at **SM Technology**. The task involved replicating a Figma design into a fully responsive landing page using modern frontend technologies.
 
@@ -55,7 +54,7 @@ npm run build
 
 🔗 Submission Links  
 🔴 Live Demo: Live Website  
-🗂️ GitHub Repository: GitHub Repo  
+🗂️ GitHub Repository: [GitHub Repo](https://github.com/mdtanvirislamrakib/sm-technology-task-cosmetic-web)  
 
 👨‍💻 About the Developer  
 MD. Tanvir Islam Rakib  
