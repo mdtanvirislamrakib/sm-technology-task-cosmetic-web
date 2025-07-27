@@ -3,11 +3,10 @@
 
 This repository contains the completed technical assessment for the **Frontend Developer** position at **SM Technology**. The task involved replicating a Figma design into a fully responsive landing page using modern frontend technologies.
 
----
 
 ---
 🔗 Submission Links    
-🔴 Live Demo: [Live Website ](https://sm-technology-task.netlify.app/)     
+🔴 Live Site: [Live Website ](https://sm-technology-task.netlify.app/)     
 🗂️ GitHub Repository: [GitHub Repo](https://github.com/mdtanvirislamrakib/sm-technology-task-cosmetic-web)    
 
 ---
