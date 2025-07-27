@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+.banner-bg-color {
+  background: rgba(255, 255, 255, 0.2);
+}
+.banner-image-bg {
+  background: radial-gradient(50.00% 50.00% at 50% 50%,rgb(255, 199, 207) 34.615%,rgba(255, 255, 255, 0) 100%);
+}
+
+.dark-pink {
+  background: rgb(206, 78, 97);
+}
+
+.light-pink {
+  background: rgb(255, 199, 207);
+}
