@@ -6,7 +6,7 @@ import testimonialImage from "../../assets/images/Customer/testomonial.png";
 const CustomerTestimonial = () => {
   return (
     <div className="banner-bg-color py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 roboto-font">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Customer Testimonial</h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 relative">
@@ -25,7 +25,7 @@ const CustomerTestimonial = () => {
                   <p className="text-sm text-gray-500">Designer</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-[16px] leading-relaxed">
+              <p className="text-gray-500 text-[16px] leading-relaxed">
                 Explore our collection of carefully chosen products expert advice and inspiring stories designed to
                 help you discover your full potential. Whether you are seeking inspiration advice or the perfect
                 product to elevate your routine.
@@ -45,7 +45,7 @@ const CustomerTestimonial = () => {
                   <p className="text-sm text-gray-500">Designer</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-[16px] leading-relaxed">
+              <p className="text-gray-500 text-[16px] leading-relaxed">
                 Explore our collection of carefully chosen products expert advice and inspiring stories designed to
                 help you discover your full potential. Whether you are seeking inspiration advice or the perfect
                 product to elevate your routine.

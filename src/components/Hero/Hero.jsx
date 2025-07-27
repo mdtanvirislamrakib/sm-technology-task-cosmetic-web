@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className='relative flex items-center overflow-hidden py-10 md:py-16 lg:py-0 lg:pt-10 banner-bg-color bg-gray-200/5'
+      className='relative flex items-center overflow-hidden py-10 md:py-16 lg:py-0 lg:pt-20 banner-bg-color bg-gray-200/5'
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -64,25 +64,25 @@ const Hero = () => {
             <div className="relative -left-2 top-0">
               <div className="absolute -top-1 -left-1 w-10 h-10 bg-[#FFC7CF] rounded-full opacity-80"></div>
               <div className="absolute -top-1 left-2 w-10 h-10 bg-[#CE4E61] rounded-full opacity-80"></div>
-              <div className="w-5 h-5 bg-[#FFB5B5] rounded-full z-10"></div>
+              <div className="w-5 h-5 rounded-full z-10"></div>
             </div>
-            <span className='text-xl font-semibold text-gray-800 tracking-wider ml-2 z-10'>
+            <span className='text-xl font-semibold text-gray-800 tracking-wider ml-2 z-10 maven-font'>
               New Spring 2025 Collections
             </span>
           </motion.div>
 
           {/* banner title */}
           <motion.h1
-            className='text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold text-gray-900 leading-tight mt-6 mb-6 md:mb-8'
+            className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight mt-6 mb-6 md:mb-8 maven-font'
             variants={itemVariants}
           >
             Fashion That<br />
-            Feels As Good As It <span className='text-[#CE4E61] inline-block transform -rotate-3 ml-2'>Looks</span>
+            Feels As Good As It <span className='text-[#CE4E61] inline-block transform -rotate-[4.65deg] ml-2'>Looks</span>
           </motion.h1>
 
           {/* banner subtitle */}
           <motion.p
-            className='text-gray-600 text-base md:text-lg lg:text-xl mb-8 md:mb-10 max-w-lg lg:max-w-xl mx-auto lg:mx-0'
+            className='text-gray-600 text-base md:text-lg lg:text-xl mb-8 md:mb-10 max-w-lg lg:max-w-xl mx-auto lg:mx-0 montserrat-font'
             variants={itemVariants}
             style={{ lineHeight: '1.6' }}
           >
@@ -91,7 +91,7 @@ const Hero = () => {
 
           {/* Get started button add */}
           <motion.button
-            className='bg-[#CE4E61] hover:bg-[#B43C4F] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#CE4E61] focus:ring-opacity-75 flex items-center justify-center gap-3 mx-auto lg:mx-0 cursor-pointer'
+            className='bg-[#CE4E61] hover:bg-[#B43C4F] text-white font-bold py-3 px-8 rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#CE4E61] focus:ring-opacity-75 flex items-center justify-center gap-3 mx-auto lg:mx-0 cursor-pointer montserrat-font'
             variants={itemVariants}
             whileHover={{ scale: 1.05, boxShadow: "0 15px 25px -5px rgba(206, 78, 97, 0.4)" }}
             whileTap={{ scale: 0.95 }}
@@ -118,7 +118,7 @@ const Hero = () => {
 
           {/* Quote Box*/}
           <motion.div
-            className='absolute p-5 md:p-6 text-sm md:text-base lg:text-gray-900 bg-white lg:bg-transparent rounded-4xl lg:shadow-none shadow-sm max-w-[200px] md:max-w-[250px] lg:max-w-[250px] lg:mr-5 z-20 lg:-right-[80px] xl:-right-[100px] lg:top-0 lg:bottom-auto bottom-10 -right-10 md:-right-20'
+            className='absolute p-5 md:p-6 text-sm md:text-base lg:text-gray-900 bg-white lg:bg-transparent rounded-4xl lg:shadow-none shadow-sm max-w-[200px] md:max-w-[250px] lg:max-w-[250px] lg:mr-5 z-20 lg:-right-[80px] xl:-right-[100px] lg:top-0 lg:bottom-auto bottom-10 -right-10 md:-right-20 roboto-font'
 
             variants={quoteBoxVariants}
             animate={["visible", "float"]}

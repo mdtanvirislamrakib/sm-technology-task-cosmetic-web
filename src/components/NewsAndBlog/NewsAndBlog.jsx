@@ -6,13 +6,13 @@ import thirdImage from "../../assets/images/blogImages/image3.png"; // Bottom Ri
 const NewsAndBlog = () => {
   return (
     <section className="py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 inter-font">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Latest News and Blog</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Top Left Text Card - Relates to general beauty/skincare */}
           <div className="col-span-1 rounded-lg p-6 flex flex-col">
-            <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-800 ">Unlocking Radiant Skin: Your Daily Skincare Ritual</h3>
+            <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-800 roboto-font">Unlocking Radiant Skin: Your Daily Skincare Ritual</h3>
             <p className="text-gray-600 text-sm mb-4">
               Discover the secrets to a glowing complexion with our expert guide to daily skincare. Learn about the best products and techniques to cleanse, hydrate, and protect your skin for lasting radiance and health.
             </p>
@@ -32,7 +32,7 @@ const NewsAndBlog = () => {
 
           {/* Top Right Text Card - Relates to makeup/cosmetics */}
           <div className="col-span-1 rounded-lg p-6 flex flex-col">
-            <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-800 ">The Art of Makeup: Enhancing Your Natural Beauty</h3>
+            <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-800 roboto-font">The Art of Makeup: Enhancing Your Natural Beauty</h3>
             <p className="text-gray-600 text-sm mb-4">
               Dive into the world of cosmetics and learn how to apply makeup like a pro. From foundation to finishes, our tips will help you highlight your best features and express your unique style with confidence.
             </p>
@@ -52,7 +52,7 @@ const NewsAndBlog = () => {
 
           {/* Bottom Middle Text Card - Relates to hair care/treatments */}
           <div className="col-span-1 rounded-lg p-6 flex flex-col">
-            <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-800 ">Transform Your Tresses: Advanced Hair Care Solutions</h3>
+            <h3 className="text-xl lg:text-2xl font-bold mb-3 text-gray-800 roboto-font">Transform Your Tresses: Advanced Hair Care Solutions</h3>
             <p className="text-gray-600 text-sm mb-4">
               Explore the latest trends and treatments for healthy, lustrous hair. Whether you're dealing with damage, dryness, or dullness, our comprehensive guide offers solutions to revitalize your locks.
             </p>

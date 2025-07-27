@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+/* import maven pro font url */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+/* Montserrat font url */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* roboto font url */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Inter fol url */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* DM Sans font url */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Arsenal font url */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* jost font url */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .banner-bg-color {
   background: rgb(242, 242, 242);
 }
@@ -15,3 +37,30 @@
   background: rgb(255, 199, 207);
 }
 
+.maven-font {
+  font-family: "Maven Pro", sans-serif;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
+
+.dm-sans-font {
+  font-family: "DM Sans", sans-serif;
+}
+
+.arsenal-font {
+  font-family: "Arsenal", sans-serif;
+}
+
+.jost-font {
+  font-family: "Jost", sans-serif;
+}

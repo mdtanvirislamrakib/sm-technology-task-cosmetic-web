@@ -35,7 +35,7 @@ const PopularProducts = () => {
   return (
     <div className="container mx-auto px-4 py-8 lg:px-8">
       {/* Section title with responsive text sizing */}
-      <h2 className="text-center text-4xl md:text-5xl font-bold mb-10">Our Popular Products</h2>
+      <h2 className="text-center text-4xl md:text-5xl font-bold mb-10 inter-font">Our Popular Products</h2>
       
       {/* Responsive grid for product cards: 1 column on small, 2 on sm, 3 on md, 4 on lg screens */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -66,12 +66,12 @@ const PopularProducts = () => {
             
             {/* Product information section */}
             <div className="p-4 text-left">
-              <p className="text-sm text-gray-600 mb-1">{product.brand}</p>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">{product.name}</h3>
+              <p className="text-sm text-gray-600 mb-1 dm-sans-font">{product.brand}</p>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 arsenal-font">{product.name}</h3>
               
               {/* Price */}
               <div className="flex justify-between items-center">
-                <p className="text-xl font-bold text-red-500">Price: ${product.price}</p>
+                <p className="text-lg dm-sans-font font-bold text-red-500">Price: ${product.price}</p>
                 
               </div>
             </div>

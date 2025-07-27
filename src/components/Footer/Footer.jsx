@@ -12,16 +12,16 @@ const Footer = () => {
           <div className=" pr-4 md:pr-8 lg:pr-16 "> {/* Added right padding for spacing */}
             <div className="flex items-center mb-4">
               <img src={logo} alt="Velvet Glow Logo" className="h-6 mr-2" /> {/* Adjusted height, added margin-right */}
-              <h3 className="text-2xl font-bold text-white tracking-wide">Velvet Glow</h3> {/* Added tracking-wide for text spacing */}
+              <h3 className="text-2xl font-bold text-white tracking-wide roboto-font">Velvet Glow</h3> {/* Added tracking-wide for text spacing */}
             </div>
-            <p className="text-sm leading-relaxed text-gray-400"> {/* Changed text-gray-300 to text-gray-400 for better match */}
+            <p className="text-sm leading-relaxed text-gray-400 dm-sans-font"> {/* Changed text-gray-300 to text-gray-400 for better match */}
               At Northbound we specialize in aligning people's strategies with business goals. Whether you're growing, restructuring, or
               adapting to new challenges, we help ensure your organization has the right talent, in the right place, at the right time.
             </p>
           </div>
 
           {/* Column 2: Services */}
-          <div className=" flex md:justify-end items-start">
+          <div className=" flex md:justify-end items-start jost-font">
             <div className=''>
               <div className=''>
                 <h4 className="text-2xl font-semibold text-white mb-4">Services</h4>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Quick Links */}
-          <div className=" flex md:items-center items-start flex-col">
+          <div className=" flex md:items-center items-start flex-col jost-font">
             <div>
               <h4 className="text-2xl font-semibold text-white mb-4">Quick Links</h4>
               <ul className="space-y-3 text-sm text-gray-400"> {/* Increased space-y, changed text color */}
@@ -67,7 +67,7 @@ const Footer = () => {
         <hr className="border-gray-700 my-10" /> {/* Adjusted margin for line */}
 
         {/* Copyright Information */}
-        <div className="text-left text-sm text-gray-500"> {/* Changed text-center to text-left as per image */}
+        <div className="text-left text-sm text-gray-500 jost-font"> {/* Changed text-center to text-left as per image */}
           <p>2024 Copyright Benderim I All Right Reserved</p>
         </div>
       </div>

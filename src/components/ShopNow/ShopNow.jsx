@@ -68,7 +68,7 @@ const ShopNow = () => {
 
           {/* Static Content Box Section */}
           <div
-            className="w-full p-10 bg-gray-900 text-white shadow-lg flex flex-col justify-center items-center lg:items-start text-center lg:text-left rounded-xl col-span-3"
+            className="w-full p-10 bg-gray-900 text-white shadow-lg flex flex-col justify-center items-center lg:items-start text-center lg:text-left rounded-xl col-span-3 roboto-font"
             style={{ height: '350px' }} // Height matched with slider images
           >
             <p className="text-orange-300 uppercase text-sm font-semibold mb-2">Ready To Shop</p>
@@ -77,7 +77,7 @@ const ShopNow = () => {
             </h3>
             <a
               href="#"
-              className="inline-flex items-center self-center lg:self-start px-6 py-3 bg-white text-gray-800 font-semibold rounded-full shadow-md hover:bg-gray-200 transition-colors duration-300"
+              className="inline-flex items-center self-center lg:self-start px-6 py-3 bg-white text-gray-800 font-semibold rounded-full shadow-md hover:bg-gray-200 transition-colors duration-300 inter-font"
             >
               SHOP NOW <span className="ml-2"><BsArrowRightShort className="text-gray-800 text-2xl" /></span>
             </a>
