@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 
@@ -21,29 +20,14 @@ import image5 from "../../assets/images/shopnow/image5.jpg";
 const ShopNow = () => {
   const sliderImages = [image1, image2, image3, image4, image5];
 
-  // Framer Motion Variants for the static content box
-  const staticBoxVariants = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut", delay: 0.4 } },
-  };
-
-  // Framer Motion Variants for smooth slide transitions
-  const slideImageVariants = {
-    hidden: { opacity: 0, scale: 0.95 },
-    visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 100, damping: 15 } },
-  };
-
   return (
-    <motion.div
-      className="flex justify-center items-center py-12 px-4 bg-white lg:max-w-11/12 mx-auto"
-      initial="hidden"
-      animate="visible"
-      variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } }}
+    <div
+      className="flex justify-center items-center py-12 px-4 lg:px-8 bg-white lg:max-w-11/12 mx-auto"
     >
       {/* Main container for the slider and static box, with responsive gap */}
-      <div className="w-full max-w-[1280px] flex flex-col lg:flex-row items-center justify-center gap-6">
+      <div className="w-full max-w-[1280px] grid lg:grid-cols-5 grid-cols-1 gap-6 items-center justify-center">
         {/* Swiper Slider Section */}
-        <div className="w-full lg:w-[65%] relative flex justify-center items-center">
+        <div className="w-full relative flex justify-center items-center col-span-2">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={16} // Gap between individual slides
@@ -62,21 +46,12 @@ const ShopNow = () => {
           >
             {sliderImages.map((image, index) => (
               <SwiperSlide key={index}>
-                {/* Each image wrapped in a motion.div for individual animation */}
-                <motion.div
-                  variants={slideImageVariants}
-                  initial="hidden"
-                  animate="visible"
-                  whileInView="visible" // Animation triggers when slide enters viewport
-                  viewport={{ once: true, amount: 0.8 }} // Controls when animation triggers
-                >
-                  <img
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                    className="w-full object-cover rounded-lg shadow-md"
-                    style={{ height: '350px', width: '100%' }} // Image dimensions
-                  />
-                </motion.div>
+                <img
+                  src={image}
+                  alt={`Slide ${index + 1}`}
+                  className="w-full object-cover rounded-lg shadow-md"
+                  style={{ height: '350px', width: '100%' }} // Image dimensions
+                />
               </SwiperSlide>
             ))}
 
@@ -91,10 +66,9 @@ const ShopNow = () => {
         </div>
 
         {/* Static Content Box Section */}
-        <motion.div
-          className="w-full lg:w-[35%] p-10 bg-gray-900 text-white shadow-lg flex flex-col justify-center items-center lg:items-start text-center lg:text-left rounded-xl"
+        <div
+          className="w-full p-10 bg-gray-900 text-white shadow-lg flex flex-col justify-center items-center lg:items-start text-center lg:text-left rounded-xl col-span-3"
           style={{ height: '350px' }} // Height matched with slider images
-          variants={staticBoxVariants}
         >
           <p className="text-orange-300 uppercase text-sm font-semibold mb-2">Ready To Shop</p>
           <h3 className="text-3xl md:text-4xl font-bold leading-tight mb-4">
@@ -106,9 +80,9 @@ const ShopNow = () => {
           >
             SHOP NOW <span className="ml-2"><BsArrowRightShort className="text-gray-800 text-2xl" /></span>
           </a>
-        </motion.div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
