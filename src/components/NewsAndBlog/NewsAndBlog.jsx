@@ -22,7 +22,7 @@ const NewsAndBlog = () => {
           </div>
 
           {/* Top Middle Image Card - Already has image */}
-          <div className="col-span-1 rounded-lg shadow-md overflow-hidden flex items-center justify-center">
+          <div className="col-span-1 rounded-lg  overflow-hidden flex items-center justify-center">
             <img
               src={firstImage}
               alt="Woman with face mask or beauty product"
@@ -42,7 +42,7 @@ const NewsAndBlog = () => {
           </div>
 
           {/* Bottom Left Image Card - Already has image */}
-          <div className="col-span-1 rounded-lg shadow-md overflow-hidden flex items-center justify-center">
+          <div className="col-span-1 rounded-lg overflow-hidden flex items-center justify-center">
             <img
               src={secoundImage}
               alt="Hair washing or treatment in a salon"
@@ -62,7 +62,7 @@ const NewsAndBlog = () => {
           </div>
 
           {/* Bottom Right Image Card - Already has image */}
-          <div className="col-span-1 rounded-lg shadow-md overflow-hidden flex items-center justify-center">
+          <div className="col-span-1 rounded-lg overflow-hidden flex items-center justify-center">
             <img
               src={thirdImage}
               alt="Assortment of cosmetic and beauty products"
