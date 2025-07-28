@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className='relative flex items-center overflow-hidden pt-10 md:pt-16 lg:pt-20 banner-bg-color bg-gray-200/5'
+      className='relative flex items-center overflow-hidden pt-28 lg:pt-32 banner-bg-color bg-gray-200/5'
       variants={containerVariants}
       initial="hidden"
       animate="visible"
